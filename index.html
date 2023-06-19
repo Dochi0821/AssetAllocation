@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio Backtest</title>
+  </head>
+  <body>
+    <h1>Portfolio Backtest</h1>
+    <form action="/" method="POST">
+      <label for="start_date">Start Date:</label>
+      <input type="date" name="start_date" required><br>
+      <label for="end_date">End Date:</label>
+      <input type="date" name="end_date" required><br>
+      <label for="spy_weight">SPY Weight:</label>
+      <input type="number" step="0.01" min="0" max="1" name="spy_weight" required><br>
+      <label for="bnd_weight">BND Weight:</label>
+      <input type="number" step="0.01" min="0" max="1" name="bnd_weight" required><br>
+<input type="submit" value="Submit">
+</form>
+
+  </body>
+</html>
