@@ -34,11 +34,11 @@ engine = create_engine(f"mysql+pymysql://{DB_CONFIG['user']}:{DB_CONFIG['passwd'
 def index():
     return "Backtesting API!"
 
-@app.route('/backtest_static', methods=['POST'])
+@app.route('/backtest/static', methods=['POST'])
 def backtest_static():
     return backtest_static_logic(request.json)
 
-@app.route('/backtest_dynamic', methods=['POST'])
+@app.route('/backtest/dynamic', methods=['POST'])
 def backtest_dynamic():
     data = request.json
     aaAssets = data.get('aaAssets', [])
